@@ -59,22 +59,18 @@ see_.addEventListener('click', function () {
 });
 
 document.querySelectorAll('.parent-show').forEach(parent => {
-    // Find related elements within the same section
     const btn = parent.querySelector('.show-detail');
     const detail = parent.parentElement.querySelector('.detail');
     
-    // Handle parent click
     parent.addEventListener('click', (e) => {
-        // Prevent double-toggle if clicking the button
         if (e.target.closest('.show-detail')) return;
         
         detail.classList.toggle('hidden');
         btn.classList.toggle('rotate-180');
     });
 
-    // Handle button click
     btn.addEventListener('click', (e) => {
-        e.stopPropagation(); // Prevent parent click from triggering
+        e.stopPropagation();
         detail.classList.toggle('hidden');
         btn.classList.toggle('rotate-180');
     });

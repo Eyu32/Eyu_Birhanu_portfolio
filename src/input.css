@@ -13,7 +13,6 @@ html {
   }
 
 
-/* Add this to your CSS */
 @media (max-width: 640px) {
     .blur-effect {
       width: 300px !important;
