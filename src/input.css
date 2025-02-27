@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+    overflow-x: hidden;
+  }
+
+
+/* Add this to your CSS */
+@media (max-width: 640px) {
+    .blur-effect {
+      width: 300px !important;
+      height: 100px !important;
+      blur: 80px !important;
+    }
+  }
+
+img {
+
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 640px) {
+    .experience-container {
+      overflow: hidden;
+      padding: 0 1rem;
+    }
+  }
+
+  #menu, #close {
+    padding: 12px;
+    touch-action: manipulation;
+  }
+
+  .nav {
+    transition: transform 0.3s ease-in-out;
+  }
+.box{
+    background-repeat: no-repeat;
+    background-image: url(../assets/Desktop/frontend\ mentor.svg);
+    width: 24px;
+    height: 24px;
+}
+.box:hover{
+    background-image: url(../assets/Desktop/frontend_mentor_lite.svg);
+}
+
+.box1{
+    background-repeat: no-repeat;
+    background-image: url(../assets/Desktop/github.svg);
+    width: 24px;
+    height: 24px;
+}
+.box1:hover{
+    background-image: url(../assets/Desktop/github_lite.svg);
+}
+.active{
+    display: flex;
+}
+.deActive{
+    display: none;
+}
+
+.text-active{
+    display: inline;
+}
+.text-deActive{
+    display: none;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.parent-show {
+    cursor: pointer; 
+    transition: background-color 0.2s ease;
+}
+
+.parent-show:hover {
+    background-color: rgba(255,255,255,0.05); 
+}
+
+
+.link{
+    background-repeat: no-repeat;
+    background-image: url(../assets/link.svg);
+    width: 24px;
+    height: 24px;
+}
+.link:hover{
+    background-color: rgba(255,255,255,0.05); 
+}
