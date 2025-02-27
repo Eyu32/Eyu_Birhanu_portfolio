@@ -46,7 +46,3 @@ Feel free to reach out:
 
 ## 🌟 Acknowledgments
 Special thanks to everyone who has supported my journey in web development!
-
----
-Enjoy exploring my portfolio and feel free to share feedback!
-
